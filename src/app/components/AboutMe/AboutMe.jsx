@@ -1,13 +1,14 @@
 import ListGroup from "react-bootstrap/ListGroup";
 import { Card, Container } from "react-bootstrap";
+import avaImage from "../../../image/avaCircle.jpg";
 
 export const AboutMe = () => {
   return (
     <Container>
-      <Card border="info" style={{ width: "25rem", margin: "3rem auto" }}>
+      <Card border="info" style={{ width: "25rem", margin: "3rem auto 1rem" }}>
         <Card.Img
-          style={{ width: "12rem", margin: "0 auto" }}
-          src="https://i.livelib.ru/auface/551253/o/fbe5/Leonid_Medvedovskij.jpg"
+          style={{ width: "12rem", margin: "1rem auto" }}
+          src={avaImage}
         />
         <Card.Body>
           <ListGroup>
@@ -23,6 +24,14 @@ export const AboutMe = () => {
           </ListGroup>
         </Card.Body>
       </Card>
+      <p>
+        На протяжении двух лет я изучаю web-разработку. Прошел обучение в школе
+        Result School и учусь в Rolling scopes school. Изучил Html, Css,
+        Javascript, React, Redux/RTK, Git. Знаком с Typescript, NodeJS, Express,
+        Long polling базами данных типа SQL, NoSQL и отправкой запросов через
+        Axios. Cамостоятельно делаю проекты на React. <br />
+        https://github.com/Jackie-Ch
+      </p>
     </Container>
   );
 };
