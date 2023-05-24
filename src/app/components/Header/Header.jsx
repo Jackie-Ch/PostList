@@ -7,7 +7,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 
 export const Header = () => {
   return (
-    <header>
+    <>
       {[""].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3 p-3">
           <Container fluid>
@@ -54,6 +54,6 @@ export const Header = () => {
           </Container>
         </Navbar>
       ))}
-    </header>
+    </>
   );
 };

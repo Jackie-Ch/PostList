@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getPosts, setLoaderPost } from "../../../redux/actions/actionCreator";
 
-import { Header } from "./Header";
 import { Posts } from "./Posts";
 
 import Spinner from "react-bootstrap/Spinner";
@@ -25,7 +24,6 @@ export const Postlist = () => {
 
   return (
     <>
-      <Header />
       <Container>
         {(isLoaderPosts && (
           <Spinner
