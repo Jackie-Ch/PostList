@@ -9,8 +9,8 @@ import {
   SET_USERS,
 } from "../constants";
 
-export const getPosts = () => {
-  return { type: GET_POSTS };
+export const getPosts = (payload) => {
+  return { type: GET_POSTS, payload };
 };
 
 export const setPosts = (payload) => {

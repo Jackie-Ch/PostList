@@ -1,8 +1,11 @@
 import axios from "axios";
 
-export const getPosts = async () => {
+export const getPosts = async (startPage) => {
+  const limit = 20;
   const { data } = await axios.get(
-    "https://jsonplaceholder.typicode.com/posts"
+    `https://jsonplaceholder.typicode.com/posts?_start=${
+      startPage ? startPage : ""
+    }&_limit=${limit}`
   );
   return data;
 };

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getPosts, setLoaderPost } from "../../../redux/actions/actionCreator";
 
 import { Posts } from "./Posts";
+import { PaginationComponent } from "../Pagination/Pagination";
 
 import Spinner from "react-bootstrap/Spinner";
 import { Container } from "react-bootstrap";
@@ -26,6 +27,7 @@ export const Postlist = () => {
     <>
       <Container>
         <h3 style={{ textAlign: "center" }}>Post list</h3>
+        <PaginationComponent />
         {(isLoaderPosts && (
           <Spinner
             variant="info"

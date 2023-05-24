@@ -13,8 +13,8 @@ export function* handleComments({ payload }) {
   yield put(setComments(data));
 }
 
-export function* handlePosts() {
-  const data = yield call(getPosts);
+export function* handlePosts({ payload }) {
+  const data = yield call(() => getPosts(payload));
   yield put(setPosts(data));
 }
 
