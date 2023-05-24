@@ -46,10 +46,12 @@ export const Header = () => {
                   className="justify-content-end flex-grow-1 pe-3"
                   sticky="top"
                 >
-                  <Link to="/">Main</Link>
-                  <Link to="/aboutme">Aboutme</Link>
-                  {/* <Nav.Link href="/">Main</Nav.Link> */}
-                  {/* <Nav.Link href="/aboutme">Aboutme</Nav.Link> */}
+                  <Link to="/" style={{ textDecoration: "none" }}>
+                    Main
+                  </Link>
+                  <Link to="/aboutme" style={{ textDecoration: "none" }}>
+                    Aboutme
+                  </Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

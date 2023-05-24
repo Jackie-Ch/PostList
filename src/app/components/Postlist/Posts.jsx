@@ -1,4 +1,4 @@
-import { Comments } from "./Comments";
+import { Comments } from "../Comments/Comments";
 import { Post } from "./Post";
 
 import ListGroup from "react-bootstrap/ListGroup";
