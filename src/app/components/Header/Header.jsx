@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import avaImage from "../../../image/avaCircle.jpg";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -17,7 +19,7 @@ export const Header = () => {
                 className="m-2"
                 width={40}
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGRYU7baKKGNkxYPVB1Dl8yRXkvcynQLbdA&usqp=CAU"
-                alt=""
+                alt="logo"
               />
               LOGO
             </Navbar.Brand>
@@ -29,7 +31,7 @@ export const Header = () => {
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   <img
-                    src="https://i.livelib.ru/auface/551253/o/fbe5/Leonid_Medvedovskij.jpg"
+                    src={avaImage}
                     className="rounded-circle"
                     height="50"
                     alt="Avatar"
