@@ -25,6 +25,7 @@ export const Postlist = () => {
   return (
     <>
       <Container>
+        <h3 style={{ textAlign: "center" }}>Post list</h3>
         {(isLoaderPosts && (
           <Spinner
             variant="info"

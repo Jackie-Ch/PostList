@@ -11,7 +11,12 @@ export const Header = () => {
   return (
     <>
       {[""].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3 p-3">
+        <Navbar
+          key={expand}
+          expand={expand}
+          className="mb-3 p-3"
+          style={{ backgroundColor: "#E0FFFF" }}
+        >
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Brand>
