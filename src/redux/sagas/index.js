@@ -1,7 +1,12 @@
-import { takeEvery, put, call } from "redux-saga/effects";
-import { GET_POSTS, GET_COMMENTS, GET_USERS } from "../constants";
-import { setPosts, setComments, setUsers } from "../actions/actionCreator";
-import { getPosts, getComments, getUsers } from "../../api";
+import { takeEvery, put, call } from 'redux-saga/effects';
+import {
+  GET_POSTS,
+  GET_COMMENTS,
+  GET_USERS,
+  GET_USER_POSTS,
+} from '../constants';
+import { setPosts, setComments, setUsers } from '../actions/actionCreator';
+import { getPosts, getComments, getUsers, getUserPosts } from '../../api';
 
 export function* handleUsers({ payload }) {
   const data = yield call(() => getUsers(payload));
@@ -18,10 +23,16 @@ export function* handlePosts({ payload }) {
   yield put(setPosts(data));
 }
 
+export function* handleUserPosts({ payload }) {
+  const data = yield call(() => getUserPosts(payload));
+  yield put(setPosts(data));
+}
+
 export function* watchSaga() {
   yield takeEvery(GET_COMMENTS, handleComments);
   yield takeEvery(GET_POSTS, handlePosts);
   yield takeEvery(GET_USERS, handleUsers);
+  yield takeEvery(GET_USER_POSTS, handleUserPosts);
 }
 
 export function* rootSaga() {

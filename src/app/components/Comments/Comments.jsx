@@ -1,19 +1,18 @@
-// import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from 'react-redux';
 import {
   getComments,
   setLoaderComments,
-} from "../../../redux/actions/actionCreator";
+} from '../../../redux/actions/actionCreator';
 
-import Accordion from "react-bootstrap/Accordion";
-import ListGroup from "react-bootstrap/ListGroup";
-import { useAccordionButton } from "react-bootstrap/AccordionButton";
-import Card from "react-bootstrap/Card";
-import Spinner from "react-bootstrap/Spinner";
+import Accordion from 'react-bootstrap/Accordion';
+import ListGroup from 'react-bootstrap/ListGroup';
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+import Card from 'react-bootstrap/Card';
+import Spinner from 'react-bootstrap/Spinner';
 
 function CustomToggle({ children, eventKey }) {
   const decoratedOnClick = useAccordionButton(eventKey, () =>
-    console.log("totally custom!")
+    console.log('totally custom!')
   );
 
   return (
@@ -21,7 +20,7 @@ function CustomToggle({ children, eventKey }) {
       type="button"
       onClick={decoratedOnClick}
       style={{
-        borderRadius: "0.3rem",
+        borderRadius: '0.3rem',
       }}
     >
       {children}

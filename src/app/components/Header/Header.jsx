@@ -1,25 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import avaImage from "../../../image/avaCircle.jpg";
+import avaImage from '../../../image/avaCircle.jpg';
 
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Offcanvas from "react-bootstrap/Offcanvas";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export const Header = () => {
   return (
     <>
-      {[""].map((expand) => (
+      {[''].map((expand) => (
         <Navbar
           key={expand}
           expand={expand}
           className="mb-3 p-3"
-          style={{ backgroundColor: "#E0FFFF" }}
+          style={{ backgroundColor: '#E0FFFF' }}
         >
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Brand style={{ display: "flex", alignItems: "center" }}>
+            <Navbar.Brand style={{ display: 'flex', alignItems: 'center' }}>
               LOGO
               <svg
                 viewBox="0 0 256 256"
@@ -53,10 +53,13 @@ export const Header = () => {
                   className="justify-content-end flex-grow-1 pe-3"
                   sticky="top"
                 >
-                  <Link to="/" style={{ textDecoration: "none" }}>
+                  <Link to="/postlist-n" style={{ textDecoration: 'none' }}>
                     Main
                   </Link>
-                  <Link to="/aboutme" style={{ textDecoration: "none" }}>
+                  <Link
+                    to="/postlist-n/aboutme"
+                    style={{ textDecoration: 'none' }}
+                  >
                     Aboutme
                   </Link>
                 </Nav>

@@ -1,12 +1,12 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getPosts, setLoaderPost } from "../../../redux/actions/actionCreator";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getPosts, setLoaderPost } from '../../../redux/actions/actionCreator';
 
-import { Posts } from "./Posts";
-import { PaginationComponent } from "../Pagination/Pagination";
+import { Posts } from './Posts';
+import { PaginationComponent } from '../Pagination/Pagination';
 
-import Spinner from "react-bootstrap/Spinner";
-import { Container } from "react-bootstrap";
+import Spinner from 'react-bootstrap/Spinner';
+import { Container } from 'react-bootstrap';
 
 export const Postlist = () => {
   const dispatch = useDispatch();
@@ -26,7 +26,7 @@ export const Postlist = () => {
   return (
     <>
       <Container>
-        <h3 style={{ textAlign: "center" }}>Post list</h3>
+        <h3 style={{ textAlign: 'center' }}>Post list</h3>
         <PaginationComponent />
         {(isLoaderPosts && (
           <Spinner

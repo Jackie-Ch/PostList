@@ -1,13 +1,13 @@
-import { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { getPosts, getUsers } from "../../../redux/actions/actionCreator";
+import { useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { getUserPosts, getUsers } from '../../../redux/actions/actionCreator';
 
-import { Posts } from "../Postlist/Posts";
+import { Posts } from '../Postlist/Posts';
 
-import ListGroup from "react-bootstrap/ListGroup";
-import { Button, Card, Container } from "react-bootstrap";
-import Spinner from "react-bootstrap/Spinner";
+import ListGroup from 'react-bootstrap/ListGroup';
+import { Button, Card, Container } from 'react-bootstrap';
+import Spinner from 'react-bootstrap/Spinner';
 
 export const User = () => {
   window.scrollTo(0, 0);
@@ -22,22 +22,22 @@ export const User = () => {
 
   useEffect(() => {
     if (!posts.length) {
-      dispatch(getPosts(id));
+      dispatch(getUserPosts(id));
     }
     dispatch(getUsers(id));
   }, [dispatch, id, posts.length]);
 
   return (
     <Container className="mt-3">
-      <Card className="m-auto" border="info" style={{ width: "25rem" }}>
+      <Card className="m-auto" border="info" style={{ width: '25rem' }}>
         <Card.Img
-          style={{ width: "12rem" }}
+          style={{ width: '12rem' }}
           src="https://i.livelib.ru/auface/551253/o/fbe5/Leonid_Medvedovskij.jpg"
         />
         <Card.Body>
           <ListGroup>
             <ListGroup.Item>
-              <b>nickname: </b>
+              <b>username: </b>
               {user.username}
             </ListGroup.Item>
             <ListGroup.Item>
@@ -55,11 +55,11 @@ export const User = () => {
           </ListGroup>
         </Card.Body>
       </Card>
-      <Link to="/">
+      <Link to="/postlist-n">
         <Button>back to Main</Button>
       </Link>
       <ListGroup className="mt-3">
-        {(!userPost.length && (
+        {(!posts.length && (
           <Spinner
             as="span"
             animation="border"

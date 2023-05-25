@@ -7,7 +7,8 @@ import {
   SET_LOADER_COMMENTS,
   GET_USERS,
   SET_USERS,
-} from "../constants";
+  GET_USER_POSTS,
+} from '../constants';
 
 export const getPosts = (payload) => {
   return { type: GET_POSTS, payload };
@@ -39,4 +40,8 @@ export const getUsers = (payload) => {
 
 export const setUsers = (payload) => {
   return { type: SET_USERS, payload };
+};
+
+export const getUserPosts = (payload) => {
+  return { type: GET_USER_POSTS, payload };
 };
