@@ -53,11 +53,11 @@ export const Header = () => {
                   className="justify-content-end flex-grow-1 pe-3"
                   sticky="top"
                 >
-                  <Link to="/postlist-react" style={{ textDecoration: 'none' }}>
+                  <Link to="/postlist" style={{ textDecoration: 'none' }}>
                     Main
                   </Link>
                   <Link
-                    to="/postlist-react/aboutme"
+                    to="/postlist/aboutme"
                     style={{ textDecoration: 'none' }}
                   >
                     Aboutme
