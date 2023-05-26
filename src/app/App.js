@@ -12,8 +12,8 @@ function App() {
       <Routes>
         <Route path="/postlist-react" element={<Layout />}>
           <Route index element={<Postlist />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/users/:id" element={<User />} />
+          <Route path="/postlist-react/aboutme" element={<AboutMe />} />
+          <Route path="/postlist-react/users/:id" element={<User />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
