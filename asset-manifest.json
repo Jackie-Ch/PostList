@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/postlist/static/js/main.30e977ef.js",
+    "main.js": "/postlist/static/js/main.c8ff5f01.js",
     "static/js/787.d1a6ae3d.chunk.js": "/postlist/static/js/787.d1a6ae3d.chunk.js",
     "static/media/avaCircle.jpg": "/postlist/static/media/avaCircle.0feaa64c7340d3c03f7e.jpg",
     "index.html": "/postlist/index.html",
-    "main.30e977ef.js.map": "/postlist/static/js/main.30e977ef.js.map",
+    "main.c8ff5f01.js.map": "/postlist/static/js/main.c8ff5f01.js.map",
     "787.d1a6ae3d.chunk.js.map": "/postlist/static/js/787.d1a6ae3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.30e977ef.js"
+    "static/js/main.c8ff5f01.js"
   ]
 }
