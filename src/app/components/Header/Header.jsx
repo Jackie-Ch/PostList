@@ -53,13 +53,10 @@ export const Header = () => {
                   className="justify-content-end flex-grow-1 pe-3"
                   sticky="top"
                 >
-                  <Link to="/postlist-n" style={{ textDecoration: 'none' }}>
+                  <Link to="/" style={{ textDecoration: 'none' }}>
                     Main
                   </Link>
-                  <Link
-                    to="/postlist-n/aboutme"
-                    style={{ textDecoration: 'none' }}
-                  >
+                  <Link to="/aboutme" style={{ textDecoration: 'none' }}>
                     Aboutme
                   </Link>
                 </Nav>

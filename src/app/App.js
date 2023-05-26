@@ -10,10 +10,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/postlist-n" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Postlist />} />
-          <Route path="/postlist-n/aboutme" element={<AboutMe />} />
-          <Route path="/postlist-n/users/:id" element={<User />} />
+          <Route path="aboutme" element={<AboutMe />} />
+          <Route path="users/:id" element={<User />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

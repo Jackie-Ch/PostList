@@ -55,7 +55,7 @@ export const User = () => {
           </ListGroup>
         </Card.Body>
       </Card>
-      <Link to="/postlist-n">
+      <Link to="/">
         <Button>back to Main</Button>
       </Link>
       <ListGroup className="mt-3">
