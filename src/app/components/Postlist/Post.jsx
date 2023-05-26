@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export const Post = ({ userId, title, body }) => {
   return (
     <>
-      <Link to={`/users/${userId}`}>
+      <Link to={`/postlist-react/users/${userId}`}>
         <img
           src="https://i.livelib.ru/auface/551253/o/fbe5/Leonid_Medvedovskij.jpg"
           className="rounded-circle"
